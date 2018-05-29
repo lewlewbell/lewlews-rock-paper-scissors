@@ -17,4 +17,4 @@ I have described the psychological theory behind each of these modifiers.
 
 ## Note:
 
-There are few end game bugs in this game so you might need to sometimes refresh the window when your game is over. I never quite got the time to fix this bug. :-(
+There are few end game bugs in this game so you might need to sometimes refresh the window when your game is over. I never quite got the time to fix this bug. :-( Perhaps one day I can get round to also polishing the design up a bit. Of course this is all open to the world so feel free to jump in!
