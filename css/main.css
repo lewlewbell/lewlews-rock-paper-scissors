@@ -1,0 +1,155 @@
+body {
+	text-align: center;
+}
+
+h1 {
+	color: #FFF;
+}
+
+.game__launch {
+	background: #332611 url('../images/launch-game.jpg') center center no-repeat;
+	width: 800px;
+	height: 560px;
+	border: 0;
+	opacity: 0.9;
+	text-indent: -9999px;
+	transition: all 400ms linear;
+}
+
+.game__launch:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+
+.the-combat-arena {
+	float: left;
+	width: 100%;
+}
+
+.player {
+	position: absolute;
+	top: 50px;
+	width: 200px;
+	height: 300px;
+	margin-top: 50px;
+	font-family: Myriad Pro, Arial, Times;
+	font-size: 18px;
+}
+
+.player--human {
+	left: 20px;
+	text-align: left;
+}
+
+.player--ai {
+	right: 20px;
+	text-align: right;
+}
+
+.player span { padding-bottom: 10px; }
+
+.the-ring {
+	width: 750px;
+    margin: 30px auto;
+    height: 300px;
+}
+
+.the-ring__human, .the-ring__ai {
+	width: 250px;
+	height: 259px;
+}
+
+.the-ring__human {
+	float: left;
+	background: transparent url('../images/1-2-3.png') no-repeat;
+}
+
+.the-ring__ai {
+	float: right;
+    background: transparent url('../images/1-2-3-reversed.png') no-repeat;
+}
+
+.the-ring__human--rock, .the-ring__ai--rock { background: transparent url('../images/select-rock.png') no-repeat; }
+.the-ring__human--paper, .the-ring__ai--paper { background: transparent url('../images/select-paper.png') no-repeat; }
+.the-ring__human--scissors, .the-ring__ai--scissors { background: transparent url('../images/select-scissors.png') no-repeat; }
+
+.the-ring__ai--rock, .the-ring__ai--paper, .the-ring__ai--scissors { transform: scaleX(-1); }
+
+.options li {
+	display: inline-block;
+	padding: 0 20px;
+	opacity: 0.9;
+}
+
+.options li:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+
+.scoreboard {
+	width: 800px;
+	height: 560px;
+	margin: 0 auto;
+	background-color: #32260E;
+	font-size: 20px;
+	color: #FFF;
+}
+
+.scoreboard__conclusion {
+	padding: 0 30px;
+	font-size: 26px;
+}
+
+/* Utilities */
+.hide {
+	display: none;
+}
+
+.scale-up {
+	transform: scale(2);
+}
+
+.u-float-left { float: left; }
+.u-float-right { float: right; }
+
+/* Animations */
+
+.u-shake {
+	animation: shake 0.5s infinite;
+}
+
+@keyframes shake {
+	0% {
+    	margin-left: 0;
+    	transform: rotateZ(0deg);
+	}
+	50% {
+		margin-left: 40px;
+		transform: rotateZ(25deg);
+	}
+	100% {
+		margin-left: 0;
+		transform: rotateZ(0deg);
+	}
+}
+
+.u-shake-reversed {
+	animation: shake-reversed 0.5s infinite;
+}
+
+@keyframes shake-reversed {
+	0% {
+		margin-right: 0;
+    	transform: rotateZ(0deg);
+	}
+	50% {
+		margin-right: 40px;
+		transform: rotateZ(-25deg);
+	}
+	100% {
+		margin-right: 0;
+		transform: rotateZ(0deg);
+	}
+}
+
+
